@@ -23,7 +23,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//require("./routes/routes")(app);
+require("./routes/routes")(app);
 app.use(errorHandler);
 
 export default app;
